@@ -1,0 +1,5 @@
+body {
+  color: var(--foo);
+}
+
+@import "./foo.css";
