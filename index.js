@@ -7,9 +7,7 @@ function cssnextLoader(contents){
   options.features = assign({}, this.options.cssnext ? this.options.cssnext.features : null)
   options.features.import = assign({}, options.features.import || null)
   options.features.import.onImport = function(files){
-    files.forEach(function(file){
-      this.addDependency(file)
-    }, this)
+    files.forEach(this.addDependency)
   }.bind(this)
   try {
     return cssnext(contents, options)
