@@ -4,7 +4,7 @@
   "description": "webpack loader for cssnext",
   "main": "index.js",
   "scripts": {
-    "start" : "npm install && npm test",
+    "start": "npm install && npm test",
     "test": "tape test/**.js"
   },
   "repository": {
@@ -25,6 +25,7 @@
   "homepage": "https://github.com/cssnext/cssnext-loader",
   "dependencies": {
     "cssnext": "^0.6.0",
+    "loader-utils": "^0.2.5",
     "object-assign": "^2.0.0"
   },
   "devDependencies": {
