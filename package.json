@@ -1,6 +1,6 @@
 {
   "name": "cssnext-loader",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "webpack loader for cssnext",
   "main": "index.js",
   "scripts": {
