@@ -50,4 +50,7 @@ module: {
 }
 ```
 
+## [changelog](CHANGELOG.md)
+
 ## [license](LICENSE)
+
