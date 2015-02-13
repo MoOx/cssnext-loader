@@ -21,8 +21,8 @@ function cssnextLoader(contents, map){
   this.cacheable()
   var options = assign({}, defaultOptions(this, map), this.options.cssnext)
   options.features = assign({}, this.options.cssnext ? this.options.cssnext.features : null)
-  options.features.import = assign({}, options.features.import || null)
-  options.features.import.onImport = function(files){
+  options.import = assign({}, options.import || null)
+  options.import.onImport = function(files){
     files.forEach(this.addDependency)
   }.bind(this)
   try {
