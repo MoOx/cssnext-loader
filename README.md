@@ -21,11 +21,12 @@ module.exports = {
     path: "path/to/output/",
     filename: "bundle.js"
   },
-  cssnext : {
-    features : {
-      import : {
-        path : ["src/assets/stylesheets"]
-      }
+  cssnext: {
+    features: {
+      customProperties: false
+    },
+    import: {
+      path: ["src/assets/stylesheets"]
     }
   }
 }

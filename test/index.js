@@ -10,11 +10,9 @@ tape("cssnext-loader", function(test){
       path: "./test/output/",
       filename: "bundle.js"
     },
-    cssnext : {
-      features : {
-        import : {
-          path : ["test/fixtures/"]
-        }
+    cssnext: {
+      import: {
+        path: ["test/fixtures/"]
       }
     }
   }, function(err, stat){
@@ -40,11 +38,9 @@ tape("cssnext-loader source maps", function(test){
     },
     debug: true,
     devtool: 'source-map',
-    cssnext : {
-      features : {
-        import : {
-          path : ["test/fixtures/"]
-        }
+    cssnext: {
+      import: {
+        path: ["test/fixtures/"]
       }
     }
   }, function(err, stat){
