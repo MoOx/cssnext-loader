@@ -2,17 +2,17 @@
 
 > a webpack loader for cssnext
 
-## install
+**Issues with the output should be reported on [cssnext issue tracker](https://github.com/cssnext/cssnext/issues).**
+
+## Install
 
 ```console
 $ npm install cssnext-loader
 ```
 
-## api
+## Usage
 
-### cssnext
-
-in your `webpack.config.js`
+Add a cssnext section in your `webpack.config.js`
 
 ```javascript
 module.exports = {
@@ -22,23 +22,12 @@ module.exports = {
     filename: "bundle.js"
   },
   cssnext: {
-    features: {
-      customProperties: false
-    },
-    import: {
-      path: ["src/assets/stylesheets"]
-    }
+    browsers: "last 2 versions",
   }
 }
 ```
 
-in your js file :
-
-```javascript
-var css = require("style-loader!css-loader!../..!./file.css")
-```
-
-you can also configure webpack so that it always parses CSS files like this :
+You can configure webpack so that it always parses CSS files like this :
 
 ```javascript
 module: {
@@ -51,7 +40,26 @@ module: {
 }
 ```
 
-## [changelog](CHANGELOG.md)
+Or, for a direct usage, in your JavaScript files :
 
-## [license](LICENSE)
+```javascript
+var css = require("style-loader!css-loader!cssnext-loader!../..!./file.css")
+```
+
+### Options
+
+Options are directly passed to cssnext, so checkout [cssnext options](https://github.com/cssnext/cssnext#nodejs-options) directly.
+
+_Note: some options are by default automatically specified._
+
+- `from` 
+- `to`
+- `sourcemap` (webpack `sourceMap`)
+- `compress` (webpack `minimize`)
+
+---
+
+## [Changelog](CHANGELOG.md)
+
+## [License](LICENSE)
 
