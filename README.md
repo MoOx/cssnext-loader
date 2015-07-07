@@ -48,7 +48,7 @@ var css = require("style-loader!css-loader!cssnext-loader!../..!./file.css")
 
 ### Options
 
-Options are directly passed to cssnext, so checkout [cssnext options](https://github.com/cssnext/cssnext#nodejs-options) directly.
+Options are directly passed to cssnext, so checkout [cssnext options](http://cssnext.io/usage/) directly.
 
 _Note: some options are by default automatically specified._
 
