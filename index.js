@@ -1,3 +1,4 @@
+var qs = require("querystring")
 var cssnext = require("cssnext")
 var assign = require("object-assign")
 var loaderUtils = require("loader-utils")
@@ -14,6 +15,14 @@ function defaultOptions(context, map){
     }
   }
   options.compress = context.minimize
+  if (context.query) {
+    var query = qs.parse(context.query.replace(/^\?/, ''))
+    if (options.compress && query.safe != null) {
+      options.compress = {
+        safe: true
+      }
+    }
+  }
   return options
 }
 
