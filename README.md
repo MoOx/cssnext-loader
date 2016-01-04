@@ -1,3 +1,7 @@
+# DEPRECATED. Use postcss-loader instead.
+
+---
+
 # cssnext-loader [![Build Status](http://img.shields.io/travis/cssnext/cssnext-loader.svg)](https://travis-ci.org/cssnext/cssnext-loader)
 
 > a webpack loader for cssnext
