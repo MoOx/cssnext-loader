@@ -56,14 +56,14 @@ Options are directly passed to cssnext, so checkout [cssnext options](http://css
 
 _Note: some options are by default automatically specified._
 
-- `from` 
+- `from`
 - `to`
 - `sourcemap` (webpack `sourceMap`)
 - `compress` (webpack `minimize`)
+- `safe` - whether to compress in [safe mode](http://cssnano.co/options/#-options-safe-bool-)
 
 ---
 
 ## [Changelog](CHANGELOG.md)
 
 ## [License](LICENSE)
-
